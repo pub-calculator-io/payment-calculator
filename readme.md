@@ -12,9 +12,8 @@ Define the monthly payment amount or time period to pay off a loan with a set te
 3. Activate the [Payment Calculator](https://www.calculator.io/payment-calculator/ "Payment Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
 ## Usage
-* Add the shortcode `[ci_payment_calculator]` to your page or post and configure default mortgage parameters.
-* If you are using widgets, just add the Payment Calculator to the sidebar through the `Appearance -> Widgets -> Payment Calculator` menu in WordPress.
-* Add the following code: `<?php display_ci_payment_calculator(); ?>` to your template where you would like the Payment Calculator to appear.
+* Add the shortcode `[ci_payment_calculator]` to your page, post or sidebar.
+* Or add the following code: `<?php display_ci_payment_calculator(); ?>` to your template where you would like the Payment Calculator to appear.
 
 ## Libraries in Use
 1. https://mathjs.org/
