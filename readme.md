@@ -1,4 +1,4 @@
-=== Payment Calculator by Calculator.iO ===
+# Payment Calculator by Calculator.iO
 Contributors: calculatorio
 Tags: 
 Requires at least: 5.0
@@ -9,11 +9,11 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
 
-== Description ==
+## Description
 
 Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
 
-__Shortcode__
+### Shortcode
 
 Use the Payment Calculator shortcode:
 
@@ -27,21 +27,21 @@ Libraries in use:
 5. https://air-datepicker.com/
 6. https://www.chartjs.org/
 
-== Installation ==
+## Installation
 
 1. Upload the /ci_payment_calculator/ folder to the /wp-content/plugins/ directory.
 2. Activate the [Payment Calculator](https://www.calculator.io/payment-calculator/ "Payment Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
-== Usage ==
+## Usage
 * Add the shortcode `[ci_payment_calculator]` to your page or post and configure default mortgage parameters.
 * If you are using widgets, just add the Payment Calculator to the sidebar through the `Appearance -> Widgets -> Payment Calculator` menu in WordPress.
 * Add the following code: `<?php display_ci_payment_calculator(); ?>` to your template where you would like the Payment Calculator to appear.
 
-== Screenshots ==
+## Screenshots
 1. The Payment Calculator Input Form.
 2. The Payment Calculator Calculation Results.
 
-== Changelog ==
+## Changelog
 
-= 1.0.0 =
+### 1.0.0
 * Initial release
