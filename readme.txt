@@ -13,6 +13,8 @@ Define the monthly payment amount or time period to pay off a loan with a set te
 
 Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
 
+[Payment Calculator Homepage](https://www.calculator.io/payment-calculator/ "Payment Calculator Homepage")
+
 __Shortcode__
 
 Use the Payment Calculator shortcode:
