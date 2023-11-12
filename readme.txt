@@ -13,34 +13,35 @@ Define the monthly payment amount or time period to pay off a loan with a set te
 
 Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
 
-[Payment Calculator Homepage](https://www.calculator.io/payment-calculator/ "Payment Calculator Homepage")
+[https://www.calculator.io/payment-calculator/](https://www.calculator.io/payment-calculator/)
 
-__Shortcode__
-
-Use the Payment Calculator shortcode:
+__Payment Calculator Shortcode__
 
 `[ci_payment_calculator]`
-
-Libraries in use:
-1. https://mathjs.org/
-2. https://katex.org/
-3. https://github.com/aFarkas/lazysizes
-4. https://github.com/RobinHerbots/Inputmask
-5. https://air-datepicker.com/
-6. https://www.chartjs.org/
 
 == Installation ==
 
 1. Upload the /ci_payment_calculator/ folder to the /wp-content/plugins/ directory.
 2. Activate the [Payment Calculator](https://www.calculator.io/payment-calculator/ "Payment Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
-== Usage ==
+== Payment Calculator Usage ==
+
 * Add the shortcode `[ci_payment_calculator]` to your page, post or sidebar.
 * Add the following code: `<?php display_ci_payment_calculator(); ?>` to your template where you would like the Payment Calculator to appear.
 
 == Screenshots ==
+
 1. The Payment Calculator Input Form.
 2. The Payment Calculator Calculation Results.
+
+== Libraries used in Payment Calculator ==
+
+1. https://mathjs.org/
+2. https://katex.org/
+3. https://github.com/aFarkas/lazysizes
+4. https://github.com/RobinHerbots/Inputmask
+5. https://air-datepicker.com/
+6. https://www.chartjs.org/
 
 == Changelog ==
 
