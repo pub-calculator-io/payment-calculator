@@ -9,41 +9,29 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
 
-== Description ==
-
-Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
-
 [https://www.calculator.io/payment-calculator/](https://www.calculator.io/payment-calculator/)
 
-__Payment Calculator Shortcode__
+== Usage ==
+
+Add the Payment Calculator shortcode to your page, post or sidebar:
 
 `[ci_payment_calculator]`
 
-== Installation ==
+Add the following code to your template where you would like the Payment Calculator to appear:
 
-1. Upload the /ci_payment_calculator/ folder to the /wp-content/plugins/ directory.
-2. Activate the [Payment Calculator](https://www.calculator.io/payment-calculator/ "Payment Calculator Homepage") plugin through the "Plugins" menu in WordPress.
-
-== Payment Calculator Usage ==
-
-* Add the shortcode `[ci_payment_calculator]` to your page, post or sidebar.
-* Add the following code: `<?php display_ci_payment_calculator(); ?>` to your template where you would like the Payment Calculator to appear.
+`<?php display_ci_payment_calculator(); ?>`
 
 == Screenshots ==
 
 1. The Payment Calculator Input Form.
 2. The Payment Calculator Calculation Results.
 
-== Libraries used in Payment Calculator ==
+== Installation ==
 
-1. https://mathjs.org/
-2. https://katex.org/
-3. https://github.com/aFarkas/lazysizes
-4. https://github.com/RobinHerbots/Inputmask
-5. https://air-datepicker.com/
-6. https://www.chartjs.org/
+1. Upload the Payment Calculator /ci_payment_calculator/ folder to the /wp-content/plugins/ directory.
+2. Activate the Payment Calculator plugin through the "Plugins" menu in WordPress.
 
 == Changelog ==
 
 = 1.0.0 =
-* Initial release
+* Initial release of Payment Calculator
