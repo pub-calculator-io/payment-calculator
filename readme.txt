@@ -1,6 +1,6 @@
 === Payment Calculator by Calculator.iO ===
 Contributors: calculatorio
-Tags: 
+Tags: payment calculator, loan payment, mortgage payment, car loan, monthly payment, amortization schedule, loan calculator, installment calculator, loan repayment, monthly installment
 Requires at least: 5.0
 Tested up to: 6.4.0
 Stable tag: 1.0.0
