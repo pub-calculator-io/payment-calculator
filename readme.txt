@@ -1,4 +1,4 @@
-=== Payment Calculator by Calculator.iO ===
+=== Payment Calculator ===
 Contributors: calculatorio
 Tags: payment calculator, loan payment, mortgage payment, car loan, monthly payment, amortization schedule, loan calculator, installment calculator, loan repayment, monthly installment
 Requires at least: 5.0
