@@ -1,4 +1,4 @@
-# Payment Calculator WordPress Widget by [Calculator.iO](https://www.calculator.io/ "Calculator.iO Homepage")
+# Payment Calculator Widget for WordPress
 
 Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
 
