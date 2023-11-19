@@ -7,7 +7,7 @@ Define the monthly payment amount or time period to pay off a loan with a set te
 
 ## Installation
 
-1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+1. [Download](https://github.com/pub-calculator-io/payment-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
 2. Upload the /payment-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Payment Calculator](https://www.calculator.io/payment-calculator/ "Payment Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
