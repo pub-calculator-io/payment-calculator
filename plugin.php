@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Payment Calculator by www.calculator.io
+Plugin Name: CI Payment calculator
 Plugin URI: https://www.calculator.io/payment-calculator/
 Description: Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
 Version: 1.0.0
