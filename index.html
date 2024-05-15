@@ -152,21 +152,26 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
-                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script"></script>
+                	<script type="text/javascript" src="./assets/js/lib/chartjs/chart.min.js" id="chartjs_lib" defer></script>
+                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script" defer></script>
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
                 <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row tab " data-tab="1">
                 
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculateFixed(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculateFixed(this); animateElements();" data-action="calculateFixed" id="action-button">Calculate</button>
                 </div>
+                
+                
                 
                 
                 
@@ -185,12 +190,11 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col tab tab--active" data-tab="0">
 	<p class="table-cell table-cell--dark table-cell--only-title">Result</p>
 	<div class="table-cell table-cell--age table-cell--only row">
-		<div class="col chart__text">
+		<div class="col chart__text animate">
 			<p class="result-text" id="monthly-payment">Monthly Payment: $1,186.19</p>
 			<p class="result-text result-text--small-loan" id="payments">You will need to pay $1,186.19 every month for 15 years to payoff the debt</p>
 			<p class="result-text result-text--small-loan" id="period">Time Required to Clear Debt: 15 years</p>
@@ -235,7 +239,7 @@
 			<table class="result-table">
 				<thead>
 					<tr>
-						<th class="indigo text-center">№</th>
+						<th class="indigo text-center">#</th>
 						<th class="indigo">BEGINNING BALANCE</th>
 						<th class="indigo">INTEREST</th>
 						<th class="indigo">PRINCIPAL</th>
@@ -347,7 +351,7 @@
 			<table class="result-table">
 				<thead>
 					<tr>
-						<th class="indigo text-center">№</th>
+						<th class="indigo text-center">#</th>
 						<th class="indigo">BEGINNING BALANCE</th>
 						<th class="indigo">INTEREST</th>
 						<th class="indigo">PRINCIPAL</th>
@@ -426,7 +430,7 @@
 					<td>$598.74</td>
 					<td>$587.45</td>
 					<td>$143,109.23</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #1 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 1 End</th></tr><tr>
 					<td class="text-center">13</td>
 					<td>$143,109.23</td>
 					<td>$596.29</td>
@@ -498,7 +502,7 @@
 					<td>$568.68</td>
 					<td>$617.51</td>
 					<td>$135,865.91</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #2 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 2 End</th></tr><tr>
 					<td class="text-center">25</td>
 					<td>$135,865.91</td>
 					<td>$566.11</td>
@@ -570,7 +574,7 @@
 					<td>$537.09</td>
 					<td>$649.10</td>
 					<td>$128,252.02</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #3 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 3 End</th></tr><tr>
 					<td class="text-center">37</td>
 					<td>$128,252.02</td>
 					<td>$534.38</td>
@@ -642,7 +646,7 @@
 					<td>$503.88</td>
 					<td>$682.31</td>
 					<td>$120,248.58</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #4 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 4 End</th></tr><tr>
 					<td class="text-center">49</td>
 					<td>$120,248.58</td>
 					<td>$501.04</td>
@@ -714,7 +718,7 @@
 					<td>$468.97</td>
 					<td>$717.22</td>
 					<td>$111,835.67</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #5 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 5 End</th></tr><tr>
 					<td class="text-center">61</td>
 					<td>$111,835.67</td>
 					<td>$465.98</td>
@@ -786,7 +790,7 @@
 					<td>$432.28</td>
 					<td>$753.91</td>
 					<td>$102,992.34</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #6 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 6 End</th></tr><tr>
 					<td class="text-center">73</td>
 					<td>$102,992.34</td>
 					<td>$429.13</td>
@@ -858,7 +862,7 @@
 					<td>$393.70</td>
 					<td>$792.49</td>
 					<td>$93,696.56</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #7 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 7 End</th></tr><tr>
 					<td class="text-center">85</td>
 					<td>$93,696.56</td>
 					<td>$390.40</td>
@@ -930,7 +934,7 @@
 					<td>$353.16</td>
 					<td>$833.03</td>
 					<td>$83,925.20</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #8 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 8 End</th></tr><tr>
 					<td class="text-center">97</td>
 					<td>$83,925.20</td>
 					<td>$349.69</td>
@@ -1002,7 +1006,7 @@
 					<td>$310.54</td>
 					<td>$875.65</td>
 					<td>$73,653.92</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #9 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 9 End</th></tr><tr>
 					<td class="text-center">109</td>
 					<td>$73,653.92</td>
 					<td>$306.89</td>
@@ -1074,7 +1078,7 @@
 					<td>$265.74</td>
 					<td>$920.45</td>
 					<td>$62,857.14</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #10 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 10 End</th></tr><tr>
 					<td class="text-center">121</td>
 					<td>$62,857.14</td>
 					<td>$261.90</td>
@@ -1146,7 +1150,7 @@
 					<td>$218.65</td>
 					<td>$967.54</td>
 					<td>$51,507.97</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #11 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 11 End</th></tr><tr>
 					<td class="text-center">133</td>
 					<td>$51,507.97</td>
 					<td>$214.62</td>
@@ -1218,7 +1222,7 @@
 					<td>$169.15</td>
 					<td>$1,017.04</td>
 					<td>$39,578.16</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #12 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 12 End</th></tr><tr>
 					<td class="text-center">145</td>
 					<td>$39,578.16</td>
 					<td>$164.91</td>
@@ -1290,7 +1294,7 @@
 					<td>$117.11</td>
 					<td>$1,069.08</td>
 					<td>$27,038.00</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #13 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 13 End</th></tr><tr>
 					<td class="text-center">157</td>
 					<td>$27,038.00</td>
 					<td>$112.66</td>
@@ -1362,7 +1366,7 @@
 					<td>$62.42</td>
 					<td>$1,123.77</td>
 					<td>$13,856.26</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #14 End</th></tr><tr>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 14 End</th></tr><tr>
 					<td class="text-center">169</td>
 					<td>$13,856.26</td>
 					<td>$57.73</td>
@@ -1434,7 +1438,7 @@
 					<td>$4.92</td>
 					<td>$1,181.27</td>
 					<td>$0.00</td>
-				</tr><tr><th class="indigo text-center" colspan="5">Year #15 End</th></tr></tbody>
+				</tr><tr><th class="indigo text-center" colspan="5">Year 15 End</th></tr></tbody>
 			</table>
 		</div>
 	</div>
@@ -1469,9 +1473,6 @@
 		</table>
 	</div>
 </div>
-
-<!-- <script src="./assets/js/chart.js"./assets/js/chart.js').then(e => switchTheme = e.default)
-</script> -->
 </span>
     </div>
 </div>

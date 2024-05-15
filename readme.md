@@ -3,7 +3,6 @@
 Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
 
 ![Payment Calculator Input Form](/assets/images/screenshot-1.png "Payment Calculator Input Form")
-![Payment Calculator Calculation Results](/assets/images/screenshot-2.png "Payment Calculator Calculation Results")
 
 ## Installation
 

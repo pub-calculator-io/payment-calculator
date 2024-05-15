@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Payment Calcula
 == Screenshots ==
 
 1. The Payment Calculator Input Form.
-2. The Payment Calculator Calculation Results.
 
 == Installation ==
 

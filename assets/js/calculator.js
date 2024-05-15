@@ -9,9 +9,9 @@ function calculate(){
 	const monthlyPayment = getPayment(amount, termLoan, interest);
 	const yearsToPay = Math.floor(termLoan / 12);
 	const monthsToPay = termLoan % 12;
-	let period = yearsToPay + ' years';
+	let period = plural(yearsToPay, 'years:year:years:years:years:years');
 	if(monthsToPay > 0){
-		period += ', ' + monthsToPay + ' months';
+		period += ', ' + plural(monthsToPay.toFixed(0), 'months:month:months:months:months:months');
 	}
 	const totalPayment = monthlyPayment * termLoan;
 	const totalInterest = totalPayment - amount;
@@ -157,9 +157,9 @@ function calculateFixed(){
 
 	const yearsToPay = Math.floor(period / 12);
 	const monthsToPay = period % 12;
-	let payoff = yearsToPay + ' years';
+	let payoff = plural(yearsToPay, 'years:year:years:years:years:years');
 	if(monthsToPay > 0){
-		payoff += ', ' + monthsToPay.toFixed(0) + ' months';
+		payoff += ', ' + plural(monthsToPay.toFixed(0), 'months:month:months:months:months:months');
 	}
 	output.val(payoff).set('payoff');
 	output.val(currencyFormat(payment)).set('monthly-payment-2');
