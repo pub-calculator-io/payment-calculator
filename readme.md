@@ -1,6 +1,6 @@
 # Payment Calculator Widget for WordPress
 
-Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
+Easily calculate monthly loan payments, payoff terms, and total interest with our free Payment Calculator. Ideal for mortgages, auto, and personal loans.
 
 ![Payment Calculator Input Form](/assets/images/screenshot-1.png "Payment Calculator Input Form")
 
@@ -11,8 +11,8 @@ Define the monthly payment amount or time period to pay off a loan with a set te
 3. Activate the [Payment Calculator](https://www.calculator.io/payment-calculator/ "Payment Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
 ## Usage
-* Add the shortcode `[ci_payment_calculator]` to your page, post or sidebar.
-* Or add the following code: `<?php display_ci_payment_calculator(); ?>` to your template where you would like the Payment Calculator to appear.
+* Add the shortcode `[calcio_payment_calculator]` to your page, post or sidebar.
+* Or add the following code: `<?php display_calcio_payment_calculator(); ?>` to your template where you would like the Payment Calculator to appear.
 
 ## Libraries in Use
 1. https://mathjs.org/

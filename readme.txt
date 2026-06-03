@@ -1,13 +1,13 @@
-=== CI Payment calculator ===
+=== Payment Calculator by Calculator.iO ===
 Contributors: calculatorio
-Tags: payment calculator, loan payment, mortgage payment, car loan, monthly payment, amortization schedule, loan calculator, installment calculator, loan repayment, monthly installment
+Tags: payment calculator, loan calculator, monthly payment calculator, mortgage payment, auto loan calculator
 Requires at least: 5.0
-Tested up to: 6.4.0
+Tested up to: 6.5.5
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Define the monthly payment amount or time period to pay off a loan with a set term or fixed payment with our free payment calculator.
+Easily calculate monthly loan payments, payoff terms, and total interest with our free Payment Calculator. Ideal for mortgages, auto, and personal loans.
 
 [https://www.calculator.io/payment-calculator/](https://www.calculator.io/payment-calculator/)
 
@@ -15,19 +15,20 @@ Define the monthly payment amount or time period to pay off a loan with a set te
 
 Add the Payment Calculator shortcode to your page, post or sidebar:
 
-`[ci_payment_calculator]`
+`[calcio_payment_calculator]`
 
 Add the following code to your template where you would like the Payment Calculator to appear:
 
-`<?php display_ci_payment_calculator(); ?>`
+`<?php display_calcio_payment_calculator(); ?>`
 
 == Screenshots ==
 
 1. The Payment Calculator Input Form.
+2. The Payment Calculator Calculation Results.
 
 == Installation ==
 
-1. Upload the Payment Calculator /ci_payment_calculator/ folder to the /wp-content/plugins/ directory.
+1. Upload the Payment Calculator /calcio_payment_calculator/ folder to the /wp-content/plugins/ directory.
 2. Activate the Payment Calculator plugin through the "Plugins" menu in WordPress.
 
 == Changelog ==
